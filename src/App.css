@@ -1,6 +1,8 @@
 .App {
   text-align: center;
-  background: linear-gradient(90deg, white, #808080);
+}
+body{
+  background: linear-gradient(90deg, white, #808080)
 }
 .O_mnie{
     border-width: 5px;
@@ -15,7 +17,7 @@
     top: 10px;
 }
 .Zainteresowania{
-  border-width: 5px;
+    border-width: 5px;
     border-color: black;
     border-style: solid;
     padding: 50px;
@@ -61,6 +63,7 @@
   position: absolute;
   left: 915px;
   top: 10px;
+  color: white;
 }
 a:hover{
   text-decoration: none;
@@ -78,22 +81,80 @@ a:active{
   text-decoration: none;
   color: black;
 }
-
-
-
-
+.zaint{
+  width: 270px;
+    margin: auto;
+    font-size: 30px;
+    font-family: Apple Chancery, cursive;
+}
+li:hover{
+  font-weight: bolder;
+}
 .App-background {
   background: linear-gradient(90deg, white, #808080);
-  min-height: 100vh;
   display: flex;
+  min-height: 150px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
 }
 
-.App-link {
-  color: #61dafb;
+.wiz{
+  font-size: 100px;
+  font-family: Trebuchet MS, sans-serif;
 }
-
-
+.wiz:hover{
+  color: #2F4F4F;
+}
+.wst{
+  text-align: center;
+  font-size: 30px;
+  margin-right: 300px;
+  margin-left: 300px;
+  font-family: Apple Chancery, cursive;
+}
+#diamond-shield {
+  margin: auto;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom: 20px solid black;
+  position: relative;
+  top: -50px;
+  animation-name: s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes s{
+    0% {
+      top: -50px;
+    }
+    50% {
+      top: 30px;
+    }
+    100%{
+      top: -50px;
+    }
+}
+#diamond-shield:after {
+  content: '';
+  position: absolute;
+  left: -50px;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top: 70px solid black;
+}
+.pro{
+   width: 600px;
+   margin: 150px auto;
+   font-size: 30px;
+   font-family: Apple Chancery, cursive;
+}
+.kont{
+  width: 400px;
+  margin: 150px auto;
+  font-size: 30px;
+  font-family: Apple Chancery, cursive;
+}
