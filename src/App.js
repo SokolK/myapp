@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import Nav from './components/nav/nav.js'
 import './App.css'
 import {BrowserRouter, Route} from 'react-router-dom'
-import blog from './components/blog/blog.js'
+import Blog from './components/blog/blog.js'
 import Header from './components/header/header.js'
 import Intro from './components/intro/intro.js'
 import Inter from './components/interest/interest.js'
@@ -17,15 +17,15 @@ class App extends Component {
     <BrowserRouter>    
       <div className='App'>
         <div className="nav">
-        <Header />
-        <Intro />
-        <Inter />
-        <Diam />
-        <Pro />
-        <Cont />
+          <Header />
+          <Intro />
+          <Inter />
+          <Diam />
+          <Pro />
+          <Cont />
         </div>
         <Route path='/nav' component={Nav} />
-        <Route path='/blog' component={blog} />
+        <Route path='/blog' component={Blog} />
         
       </div>
     </BrowserRouter>

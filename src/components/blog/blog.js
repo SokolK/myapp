@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const blog = () => {
+const Blog = () => {
   return (
     <div className='con'>
       <h1 className='wiz'>Blog</h1>
@@ -13,4 +13,4 @@ const blog = () => {
   )
 }
 
-export default blog 
+export default Blog 
