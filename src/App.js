@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import nav from './components/nav.js'
+import Nav from './components/nav/nav.js'
 import './App.css'
 import {BrowserRouter, Route} from 'react-router-dom'
 import blog from './components/blog/blog.js'
@@ -16,14 +16,17 @@ class App extends Component {
   return (
     <BrowserRouter>    
       <div className='App'>
-      <Header />
-      <Intro />
-      <Inter />
-      <Diam />
-      <Pro />
-      <Cont />
-        <Route path='/nav' component={nav} />
+        <div className="nav">
+        <Header />
+        <Intro />
+        <Inter />
+        <Diam />
+        <Pro />
+        <Cont />
+        </div>
+        <Route path='/nav' component={Nav} />
         <Route path='/blog' component={blog} />
+        
       </div>
     </BrowserRouter>
   );
