@@ -1,23 +1,13 @@
 import React from 'react'
+import Header from './header/header'
 
 
 const nav = () => {
   return (
     <div className='con'>
-      <header className="App-background">
-          <a href="#wst"><div className="O_mnie"> O mnie </div></a>
-          <a href="#zaint"><div className="Zainteresowania"> Zainteresowania </div></a>
-          <a href="#pro"><div className="projekty"> Projekty </div></a>
-          <a href="#kont"><div className="kontakt"> Kontakt </div></a>
-          <a href="/blog"><div className="blog"> Blog </div></a>
-        </header>
-          <h1 className="wiz">Wizytówka</h1>
-          <div className="wst" id="wst">
-            <p>Nazywam się Jakub Sokołowski, moje główne zajęcia w trakcie dnia to siedzenie w szkole.
-              Ocenki zawsze były przyzwoite więc nigdy wybitnie nie musiałem poświęcać swojego wolnego czasu na nadrabianie zaległości.
-              W wolnym czasie oprócz typowego odpoczynku lub spotykania się ze znajomymi, ćwiczę swoje umiejętności z zakresu programowania oraz mowy po Angielsku.
-              Z faktu siedzenia przy komputerze wielu godzin, zawsze staram się znaleźć czas na siłownię dla zdrowia fizycznego oraz psychicznego.</p>
-          </div>
+        <Header />
+
+          
           <div className="zaint" id="zaint">
           <p>Zainteresowania:</p>
             <ul>
