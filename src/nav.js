@@ -18,7 +18,6 @@ const Nav = () => {
       <Diam />
       <Pro />
       <Cont />
-
     </div>
   )
 }
