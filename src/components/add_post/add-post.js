@@ -5,7 +5,8 @@ class AddPost extends Component {
     state = {
         UserName: null,
         Content: null,
-        Title: null
+        Title: null,
+        Comments: null
     }
     Update = (e) => {
         this.setState({

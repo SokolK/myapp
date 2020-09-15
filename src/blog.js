@@ -3,16 +3,16 @@ import AddPost from './components/add_post/add-post'
 import Posts from './posts'
 
 class Blog extends Component {
+  addPost = (posts) =>{
+    let post = [...this.state.post, posts]
+    this.setState({
+      post: post
+    });
+} 
   state = {
     post : [
-    {UserName: "Prodigy", Content: "MOB", Title: "Shock ones", id: 1}
+    {UserName: "Prodigy", Content: "MOB", Title: "Shock ones", Comments: null}
   ]}
-  addPost = (posts) =>{
-      let post = [...this.state.post, posts]
-      this.setState({
-        post: post
-      });
-  } 
   render(){
   return (
     <div className='con'>

@@ -123,6 +123,7 @@ li:hover{
 }
 #Content{
   word-wrap: break-word;
+  width: 200px;
 }
 .wiz{
   font-size: 100px;
@@ -183,3 +184,9 @@ li:hover{
   font-size: 30px;
   font-family: Apple Chancery, cursive;
 }
+.AddPost{
+  text-align: left;
+  font-size: large;
+  width: auto;
+}
+
