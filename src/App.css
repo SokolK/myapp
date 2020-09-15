@@ -121,6 +121,9 @@ li:hover{
 .tekst{
   font-family: Marker Felt, fantasy;
 }
+#Content{
+  word-wrap: break-word;
+}
 .wiz{
   font-size: 100px;
   font-family: Trebuchet MS, sans-serif;
